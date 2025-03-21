@@ -1,6 +1,6 @@
 # 📊 Conjunto de Dados do Censo 2022
 
-Esses dados foram retirados do **Censo Demográfico de 2022**, realizado pelo **IBGE**..
+Esses dados foram retirados do **Censo Demográfico de 2022**, realizado pelo **IBGE**.
 
 ## 1. Crescimento Populacional  
 Indica a variação do número de habitantes em relação ao censo anterior.
