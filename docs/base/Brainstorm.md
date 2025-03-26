@@ -36,7 +36,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 ---
  
-### 2. Como será o processo para cadastrar um novo clientetorneio?
+### 2. Como será o processo de cadastro e gerenciamento de clientes?
  
 <p align = "justify">
 <b>XXXX</b> - O moderador deverá fazer login e...
@@ -51,7 +51,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 ---
  
-### 3. Como será a forma de adicionar produtos?
+### 3. Quais serão as informações do App?
  
 <p align = "justify">
 <b>XXXX</b> - O cliente ao cadastrar...
@@ -68,7 +68,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 ---
  
-### 4. Outras perguntas pertinentes ao contexto
+### 4. Quais serão as funcionalidades do aplicativo?
 
 <p align = "justify">
 <b>XXXX</b> - Com a localização...
@@ -78,21 +78,6 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 <b>ZZZ</b> - O cliente...
  
 ---
- 
-### 5. "Outras perguntas pertinentes ao contexto", Como seria a forma de adicionar do cliente adicionar os produtos ?
-<p align = "justify">
-<b>XXX</b> - O cliente....
-</p>
- 
-### 6. Quais informações seriam interessante para o cliente?
-<p align = "justify">
-   <b>XXX</b> - Informações...
-   
-   <b>ZZZZ</b> - O cliente usuário poderá acessar informações...
-
-   <b>WWWWs</b> - O usuário poderá ver scouts de partidas do torneio, ver as regras dos torneios, locais e data das partidas.
-   
-</p>
  
 ### Requisitos elicitados
  
