@@ -51,7 +51,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 ---
  
-### 3. Quais serão as informações do App?
+### 3. Quais serão os dados que terão no App?
  
 <p align = "justify">
 <b>XXXX</b> - O cliente ao cadastrar...
@@ -68,7 +68,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 ---
  
-### 4. Quais serão as funcionalidades do aplicativo?
+### 4. Como garantir a segurança da aplicação?
 
 <p align = "justify">
 <b>XXXX</b> - Com a localização...
