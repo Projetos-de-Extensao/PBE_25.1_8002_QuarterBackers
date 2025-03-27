@@ -96,4 +96,4 @@ A aplicação da técnica de brainstorming permitiu ao grupo gerar insights vali
 ## Autor(es)
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | Gabriel Corrêa, Estevão Moraes, Marcelle Lohanne, Enzo Lazzarotto, Franc, Raphael|
+| 27/03/2025 | 1.0 | Criação do documento | Gabriel Corrêa, Estevão Moraes, Marcelle Lohanne, Enzo Lazzarotto, Franc, Raphael|
