@@ -25,7 +25,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 <b>Gabriel Corrêa</b> - Melhorar a qualidade de vida dos moradores por meio de dados relevantes fornecidos da Ilha Primeira
 </p>
  
-<b>ZZZ</b> - A plataforma deve fornece...
+<b>Estevão Moraes</b> - Coletar dados importantes para o desenvolvimento da Ilha Primeira
  
 <b>YYYY</b> - O objetivo da aplicação é....
  
@@ -43,7 +43,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 </p>
  
 <p align = "justify">
-<b>YYYYY</b> - O produto tem...
+<b>Estevão Moraes</b> - Dados sobre moradia, transporte e infraestrutura
 </p>
  
 <b>ZZZZ</b> - O produto....
@@ -58,7 +58,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 <p align = "justify">
 <b>Gabriel Corrêa</b> - Criptografando os dados fornecidos por meio de fontes seguras
  
-<b>YYYY</b> - O cliente...
+<b>Estevão Moraes</b> - Por meio de processos estáveis e que garantem integridade dos dados
  
 <b>ZZZ</b> - O cliente...
  
