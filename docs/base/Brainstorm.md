@@ -22,7 +22,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 ### 1. Qual o objetivo principal da aplicação?
  
 <p align = "justify">
-<b>XXXX</b> - Deve ser uma plataforma onde qualquer pessoa possa...
+<b>Gabriel Corrêa</b> - Melhorar a qualidade de vida dos moradores por meio de dados relevantes fornecidos da Ilha Primeira
 </p>
  
 <b>ZZZ</b> - A plataforma deve fornece...
@@ -36,25 +36,10 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 ---
  
-### 2. Como será o processo de cadastro e gerenciamento de clientes?
+### 2. Quais serão os dados que terão no App?
  
 <p align = "justify">
-<b>XXXX</b> - O moderador deverá fazer login e...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>WWWW</b> - Com o usuário logado, ele deverá...
-
-<b>ZZZZ</b> - O cliente...
- 
-<b>KKK</b> - O cliente...
- 
----
- 
-### 3. Quais serão os dados que terão no App?
- 
-<p align = "justify">
-<b>XXXX</b> - O cliente ao cadastrar...
+<b>Gabriel Corrêa</b> - Dados sobre a segurança, lazer e serviços existentes na Ilha
 </p>
  
 <p align = "justify">
@@ -68,10 +53,10 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 ---
  
-### 4. Como garantir a segurança da aplicação?
+### 3. Como garantir a segurança dos dados?
 
 <p align = "justify">
-<b>XXXX</b> - Com a localização...
+<b>Gabriel Corrêa</b> - Criptografando os dados fornecidos por meio de fontes seguras
  
 <b>YYYY</b> - O cliente...
  
