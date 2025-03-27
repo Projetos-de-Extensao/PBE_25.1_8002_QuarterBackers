@@ -96,4 +96,4 @@ Através da aplicação da técnica, foi possível elicitar alguns dos primeiros
 ## Autor(es)
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | Gabriel Corrêa e Estevão Moraes |
+| DD/MM/YYYY | 1.0 | Criação do documento | Gabriel Corrêa, Estevão Moraes, Marcelle Lohanne, Enzo Lazzarotto, Franc, Raphael|
