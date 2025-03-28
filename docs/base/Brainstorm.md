@@ -27,7 +27,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via discord, come�
  
 <b>Estevão Moraes</b> - Coletar dados importantes para o desenvolvimento da Ilha Primeira
  
-<b>YYYY</b> - O objetivo da aplicação é....
+<b>Marcelle Lohane</b> - O objetivo da aplicação é realizar o recenseamento da Ilha Primeira visando melhorar os projetos de desenvolvimento da Ilha com o auxílio da coleta de informações seguras.
  
 <b>WWWW</b> - O principal objetivo da aplicação é a...
  
@@ -46,8 +46,10 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via discord, come�
 <b>Estevão Moraes</b> - Dados sobre moradia, transporte e infraestrutura
 </p>
  
-<b>ZZZZ</b> - O produto....
- 
+<p align = "justify">
+<b>Marcelle</b> - O produto deverá conter dados de informações pessoais, moradia, infraestrutura, trabalho, renda, educação, cultura, saúde, bem-estar, transporte e mobilidade.
+</p>
+
 <b>XXXX</b> - O produto....
 
  
@@ -60,7 +62,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via discord, come�
  
 <b>Estevão Moraes</b> - Por meio de processos estáveis e que garantem integridade dos dados
  
-<b>ZZZ</b> - O cliente...
+<b>Marcelle</b> - Controle de acesso e proteção contra ataques cibernéticos.
  
 ---
  
