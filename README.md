@@ -1,12 +1,4 @@
-# TemplateBackEnd
-Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
-**!! Atenção: Renomeie o seu repositório para PBE_25.1_8002_(NomeDoProjeto) !!**
-
-**!! *Não coloque os nomes dos alunos no título do repositório*.**
- 
- (Apague essa seção)
-
-# NomedoProjeto
+# QuarterBackers
 
 **Número do Grupo**: V<br>
 **Turma**: 8002<br>
@@ -14,8 +6,8 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| Gabriel Corrêa |  2024 0163 9702 |
+| Estevão Moraes  |  2024 0207 0134 |
 
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
