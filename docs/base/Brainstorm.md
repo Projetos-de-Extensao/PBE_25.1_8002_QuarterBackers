@@ -31,8 +31,8 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via discord, come�
 
 <b>Raphael de Oliveira</b> - Transformar a Ilha Primeira em um local acessível, com bons serviços.
  
-<b>WWWW</b> - O principal objetivo da aplicação é a...
- 
+<b>FRANC</b> - O objetivo principal da aplicação é melhorar a qualidade de vida na Ilha Primeira, integrando dados extras ao Censo do IBGE para: Diagnosticar problemas (ex.: saneamento, saúde, educação), orientar políticas públicas com base em dados concretos.
+
 <b>KKKK</b> - A plataforma deve gerenciar...
 </p>
  
@@ -56,7 +56,9 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via discord, come�
 <b>Raphael de Oliveira</b> - Principalmente infraestrutura, serviços e segurança.
 </p>
 
-<b>XXXX</b> - O produto....
+<p align = "justify">
+<b>FRANC</b> - O produto deve ter informação da localização
+</p>
 
  
 ---
@@ -71,6 +73,8 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via discord, come�
 <b>Marcelle</b> - Controle de acesso e proteção contra ataques cibernéticos.
 
 <b>Raphael de Oliveira</b> - Atualizações de segurança.
+
+<b>FRANC</b> - aplicar perguntas de segurança para pessoa nao poder acessar seus dados
  
 ---
  
