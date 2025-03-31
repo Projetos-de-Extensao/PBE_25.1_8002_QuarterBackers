@@ -3,7 +3,6 @@ id: diagrama_de_classes
 title: Diagrama de Classes
 ---
 
-# Não precisa entregar para a AP1
 ## Introdução
 
 <p align = "justify">
@@ -13,9 +12,9 @@ O diagrama de classes UML é um diagrama que mostra a estrutura do sistema desen
 ## Metodologia
 
 <p align = "justify">
-A equipe se reuniu por .... e realizou um brainstorm onde foram dicutidos os tópicos chaves e a arquitetura geral dos sistemas, e assim criamos...
+A equipe se reuniu por discord e realizou um brainstorm onde foram dicutidos os tópicos chaves e a arquitetura geral dos sistemas, e assim criamos o diagrama de classes.
 
-Para a criação da primeira versão do diagrama de classes, a equipe utilizou o programa... Além disso, foi utilizado... para videoconferência e Visual Studio Code / Live Share para elaboração da documentação.
+Para a criação da primeira versão do diagrama de classes, a equipe utilizou o programa plantuml Além disso, foi utilizado o Visual Studio Code / Live Share para elaboração da documentação.
 </p>
 
 # ENTREGUE NO PRÓXIMO INCREMENTO
@@ -63,7 +62,5 @@ Através do diagrama de classes, foi possível representar a estrutura do sistem
 
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| 21/09/20 | 1.0 | Criação do documento | João Pedro, Lucas Alexandre, Matheus Estanislau, Moacir Mascarenha e Renan Cristyan |
-| 28/09/20 | 1.1 | Ajustes no documento | João Pedro e Renan Cristyan |
-| 28/09/20 | 1.2 | Adicionado diagrama de classes 1.1 | João Pedro e Renan Cristyan |
-| 26/10/20 | 2.0 | Adicionado diagrama de classes 2.0 | João Pedro, Lucas Alexandre, Matheus Estanislau, Moacir Mascarenha e Renan Cristyan |
+| 31/03/25 | 1.0 | Criação do documento | Gabriel Corrêa, Estevão, Marcelle, Enzo, Raphael e Franc |
+| 28/09/20 | 1.1 | Adicionando diagrama de classes 1.0 | Gabriel Corrêa |
