@@ -15,16 +15,10 @@ class Pesquisa {
 class Dashboard {
 }
 
-class Autenticação{
-}
-
 Usuário  -->  Dashboard
-Autenticação -- Recenseador
-Administrador -- Autenticação
 Pesquisa --> Dashboard
 Administrador --> Pesquisa
 Recenseador --> Pesquisa
-Usuário -- Autenticação
 Recenseador --> Dashboard
 Administrador --> Dashboard
 
