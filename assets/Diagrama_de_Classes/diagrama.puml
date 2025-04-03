@@ -1,0 +1,25 @@
+@startuml diagrama_de_classes
+
+class Usuário {
+}
+
+class Recenseador {
+}
+
+class Administrador {
+}
+
+class Pesquisa {
+}
+
+class Dashboard {
+}
+
+Usuário  -->  Dashboard
+Pesquisa --> Dashboard
+Administrador --> Pesquisa
+Recenseador --> Pesquisa
+Recenseador --> Dashboard
+Administrador --> Dashboard
+
+@enduml
