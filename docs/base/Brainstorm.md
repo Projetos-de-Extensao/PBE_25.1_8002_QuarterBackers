@@ -33,7 +33,6 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via discord, come�
  
 <b>FRANC</b> - O objetivo principal da aplicação é melhorar a qualidade de vida na Ilha Primeira, integrando dados extras ao Censo do IBGE para: Diagnosticar problemas (ex.: saneamento, saúde, educação), orientar políticas públicas com base em dados concretos.
 
-<b>KKKK</b> - A plataforma deve gerenciar...
 </p>
  
 ---
