@@ -33,10 +33,11 @@ Iniciamos o projeto através dos levantamentos iniciais da equipe, após discuss
  
 ### Tela Login Adm / Recenseador
  
-[![Prototipo 4](../assets/prototipo/prototipo_4.png)](../assets/prototipo/prototipo_4.png)
+[![Prototipo 4](../assets/Prototipo/prototipo_4.png)](../assets/Prototipo/prototipo_4.png)
  
 ### Tela Dashboard Adm / Recenseador
-[![Prototipo 5](../assets/prototipo/prototipo_5.png)](../assets/prototipo/prototipo_5.png)
+[![Prototipo 5](../assets/Prototipo/prototipo_5.png)](../assets/Prototipo/prototipo_5.png)
+
 
 <p align = "justify">
 Na primeira versão do protótipo utilizamos a ferramenta <a href="https://material.io/resources/color/#!/?view.left=0&view.right=0">Material Design Color Tool</a>  para auxiliar na criação da paleta de cores do aplicativo, definimos as cores base do aplicativo mas as cores definidas para as telas 12 e 13 ainda não foram decididas.
