@@ -9,6 +9,7 @@
 | Gabriel Corrêa |  2024 0163 9702 |
 | Estevão Moraes  |  2024 0207 0134 |
 | Marcelle Lohane  |  2024 0272 6056 |
+| Raphael de Oliveira Costa  |  2023 0716 4135 |
 
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
