@@ -11,6 +11,7 @@
 | Marcelle Lohane  |  2024 0272 6056 |
 | Raphael de Oliveira Costa  |  2023 0716 4135 |
 | FRANC WANG | 2024 0722 9166 |
+| Enzo Lazzarotto | 2024 0203 5258 |
 
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
