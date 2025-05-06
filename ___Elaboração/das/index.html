@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Titulo do documento - My Docs</title>
+        <title>Documento de Arquitetura - My Docs</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -38,15 +38,15 @@
                                 <a href="../.." class="nav-link">Welcome to MkDocs</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">   Elaboração</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">   Elaboração</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../___Elabora%C3%A7%C3%A3o/" class="dropdown-item">Modelagem</a>
+    <a href="../" class="dropdown-item">Modelagem</a>
 </li>
                                     
 <li>
-    <a href="../../___Elabora%C3%A7%C3%A3o/das/" class="dropdown-item">Documento de Arquitetura</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Documento de Arquitetura</a>
 </li>
                                     
   <li class="dropdown-submenu">
@@ -58,7 +58,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../___Elabora%C3%A7%C3%A3o/Diagramas/Casos%20de%20Uso/casos_de_uso/" class="dropdown-item">Casos de Uso - Sistema de Recenseamento da Ilha Primeira</a>
+    <a href="../Diagramas/Casos%20de%20Uso/casos_de_uso/" class="dropdown-item">Casos de Uso - Sistema de Recenseamento da Ilha Primeira</a>
 </li>
     </ul>
   </li>
@@ -68,7 +68,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../../___Elabora%C3%A7%C3%A3o/Diagramas/De%20Classes/diagrama_de_classes/" class="dropdown-item">Diagrama de Classes</a>
+    <a href="../Diagramas/De%20Classes/diagrama_de_classes/" class="dropdown-item">Diagrama de Classes</a>
 </li>
     </ul>
   </li>
@@ -127,11 +127,11 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Util</a>
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Util</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Titulo do documento</a>
+    <a href="../../util/doc_template/" class="dropdown-item">Titulo do documento</a>
 </li>
                                 </ul>
                             </li>
@@ -144,12 +144,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../___Interacao/interacao1/" class="nav-link">
+                                <a rel="prev" href="../" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../Diagramas/Casos%20de%20Uso/casos_de_uso/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -171,32 +171,116 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="2"><a href="#introducao" class="nav-link">Introdução</a>
+            <li class="nav-item" data-bs-level="1"><a href="#documento-de-arquitetura-de-software-das" class="nav-link">Documento de Arquitetura de Software (DAS)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="2"><a href="#metodologia" class="nav-link">Metodologia</a>
+            <li class="nav-item" data-bs-level="1"><a href="#nome-do-projeto" class="nav-link">"Nome do Projeto"</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="2"><a href="#desenvolvimento-renomeie-este-topico" class="nav-link">Desenvolvimento (Renomeie este tópico)</a>
+            <li class="nav-item" data-bs-level="1"><a href="#introducao" class="nav-link">Introdução</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#proposta" class="nav-link">Proposta</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#escopo" class="nav-link">Escopo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#definicoes-acronimos-e-abreviacoes" class="nav-link">Definições, Acrônimos e Abreviações</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#visao-geral" class="nav-link">Visão Geral</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#representacao-arquitetural" class="nav-link">Representação Arquitetural</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#cliente-servidor" class="nav-link">Cliente-Servidor</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#objetivos-de-arquitetura-e-restricoes" class="nav-link">Objetivos de Arquitetura e Restrições</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#objetivos" class="nav-link">Objetivos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#restricoes" class="nav-link">Restrições</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ferramentas-utilizadas" class="nav-link">Ferramentas Utilizadas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#visao-de-caso-de-uso" class="nav-link">Visão de Caso de Uso</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="2"><a href="#conclusao" class="nav-link">Conclusão</a>
+            <li class="nav-item" data-bs-level="1"><a href="#visao-logica" class="nav-link">Visão Lógica</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="2"><a href="#referencias" class="nav-link">Referências</a>
+            <li class="nav-item" data-bs-level="1"><a href="#visao-de-implantacao" class="nav-link">Visão de Implantação</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="2"><a href="#autores" class="nav-link">Autor(es)</a>
+            <li class="nav-item" data-bs-level="1"><a href="#visao-de-implementacao" class="nav-link">Visão de Implementação</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#visao-geral_1" class="nav-link">Visão Geral</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#visao-de-dados" class="nav-link">Visão de Dados</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#modelo-entidade-relacionamento-mer" class="nav-link">Modelo Entidade Relacionamento (MER)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#diagrama-entidade-relacionamento-der" class="nav-link">Diagrama Entidade Relacionamento (DER)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#tamanho-e-desempenho" class="nav-link">Tamanho e Desempenho</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#qualidade" class="nav-link">Qualidade</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#referencias-bibliograficas" class="nav-link">Referências Bibliográficas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#historico-de-versao" class="nav-link">Histórico de Versão</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -205,41 +289,124 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="introducao">Introdução</h2>
+<h1 id="documento-de-arquitetura-de-software-das">Documento de Arquitetura de Software (DAS)</h1>
+<h1 id="nome-do-projeto">"Nome do Projeto"</h1>
+<h1 id="introducao">Introdução</h1>
+<h2 id="proposta">Proposta</h2>
 <p align = "justify">
-<!-- Escreva uma introdução simples e concisa, explicando do que se trata o documento e como ele será usado no projeto (qual o objetivo do documento). -->
+Este documento apresenta uma visão geral da arquitetura do sistema, utilizando diferentes visões arquiteturais para destacar diferentes aspectos do sistema. É utilizado para capturar as decisões arquiteturais significativas que fizeram parte do sistema.
 </p>
 
-<h2 id="metodologia">Metodologia</h2>
+<h2 id="escopo">Escopo</h2>
 <p align = "justify">
-<!-- Descreva como o documento foi feito, como a técnica foi utilizada no projeto. -->
+A aplicação "XXXX" tem o objetivo fornecer...
 </p>
 
-<h2 id="desenvolvimento-renomeie-este-topico">Desenvolvimento (Renomeie este tópico)</h2>
-<!-- Mude o título do tópico de desenvolvimento para outros individuais de cada artefato. Adicione quantos subtópicos precisar. -->
-<h3 id="versao-10">Versão 1.0</h3>
+<h2 id="definicoes-acronimos-e-abreviacoes">Definições, Acrônimos e Abreviações</h2>
+<ul>
+<li>MVC - </li>
+<li>MVT - </li>
+<li>SIGLA PARA O APP - Nome do Aplicativo</li>
+</ul>
+<h2 id="visao-geral">Visão Geral</h2>
 <p align = "justify">
-<!-- Desenvolva o documento propriamente neste tópico. Para cada mudança relevante ou impactante, crie um novo subtópico com a versão correspondente (Exemplo: Versão 1.0, Versão 1.1, Versão 1.2) -->
+O Documento de Arquitetura de Software (DAS) trata-se de uma visão geral de toda a arquitetura do sistema, observando diferentes aspectos do mesmo. Neste documento serão abordadas as seguintes visões da aplicação TCM:
 </p>
 
+<ul>
+<li>Caso de Uso;</li>
+<li>Lógica;</li>
+<li>Implantação;</li>
+<li>Implementação;</li>
+<li>Dados;</li>
+</ul>
+<h1 id="representacao-arquitetural">Representação Arquitetural</h1>
+<h2 id="cliente-servidor">Cliente-Servidor</h2>
 <p align = "justify">
-<!-- Escreva aqui a primeira versão do documento. -->
+Cliente-Servidor é um modelo de arquitetura...
 </p>
 
-<h2 id="conclusao">Conclusão</h2>
+<p>Cliente (Frontend):</p>
+<ul>
+<li>View: Consiste.....</li>
+</ul>
+<p>Servidor (Backend):</p>
+<ul>
+<li>
+<p>Controller: faz a conexão entre as camadas...</p>
+</li>
+<li>
+<p>Service: Responsável pela lógica...</p>
+</li>
+<li>
+<p>Model: Responsável pela persistência...</p>
+</li>
+</ul>
+<h1 id="objetivos-de-arquitetura-e-restricoes">Objetivos de Arquitetura e Restrições</h1>
+<h2 id="objetivos">Objetivos</h2>
 <p align = "justify">
-<!-- Descreva neste tópico como a aplicação da técnica e a criação do documento foi útil para o projeto. -->
+Segurança:
+   -
+Persistência:
+   - 
+Privacidade:
+   - Middlewares: Foi usado middlewares...
+Desempenho:
+   Requisições...
+Reusabilidade:
+   Componentes no Frontend...
 </p>
 
-<h2 id="referencias">Referências</h2>
-<!-- Insira referências relevantes do projeto (com um sinal de '>' antes), se possível priorize por livros e artigos, depois sites, blogs e outros projetos parecidos.
-Exemplo:
-> Referência
- -->
+<h2 id="restricoes">Restrições</h2>
+<p align = "justify">
+Tamanho da tela:...
 
+Portabilidade:...
+
+|IE|Edge|Firefox|Chrome|Safari|Googlebot|
+|--|----|-------|------|------|---------|
+|11 |>= 14|>= 52|>= 49|>= 10|Sim|
+
+Serviços: Os serviços oferecidos....
+
+Acesso a internet: A aplicação está limitada apenas a conexão com internet
+</p>
+
+<h2 id="ferramentas-utilizadas">Ferramentas Utilizadas</h2>
+<ul>
+<li>XXX: Ambiente de execução...</li>
+<li>XXXX: Linguagem de programação...
+Typescript: XXXX</li>
+<li>XXXX: XXXX</li>
+<li>XXX: XXXX</li>
+<li>XXXX: XXXX</li>
+<li>XXXX: XXXX</li>
+<li>XXXX: XXXX</li>
+<li>XXXXX: XXXX.</li>
+</ul>
+<h1 id="visao-de-caso-de-uso">Visão de Caso de Uso</h1>
+<p align = "justify">
+O primeiro caso de uso descreve a ação de um usuário que cria um torneio, sendo assim, ele é o manager do torneio. No segundo caso de uso descreve a ação de um usuário que é entra na aplicação com a intenção de entrar em torneios como jogador. Nos dois casos o usuário pode ser o mesmo, porém com funções diferentes.
+</p>
+
+<p><img alt="Caso de uso 1" src="../assets/Casos_de_uso/caso_de_uso_1.png" /></p>
+<p><img alt="Caso de uso 2" src="../assets/Casos_de_uso/caso_de_uso_2.png" /></p>
+<h1 id="visao-logica">Visão Lógica</h1>
+<h1 id="visao-de-implantacao">Visão de Implantação</h1>
+<p><img alt="Diagrama de Implantação" src="../assets/Diagrama_implantacao/diagrama_de_implantacao.png" /></p>
+<h1 id="visao-de-implementacao">Visão de Implementação</h1>
+<h2 id="visao-geral_1">Visão Geral</h2>
+<p><img alt="Diagrama de Componentes" src="../assets/Diagrama_componentes/diagrama_de_componentesV2.0.png" /></p>
+<h1 id="visao-de-dados">Visão de Dados</h1>
+<h2 id="modelo-entidade-relacionamento-mer">Modelo Entidade Relacionamento (MER)</h2>
+<h4 id="entidades-e-relacionamentos">Entidades e Relacionamentos:</h4>
+<h2 id="diagrama-entidade-relacionamento-der">Diagrama Entidade Relacionamento (DER)</h2>
+<h1 id="tamanho-e-desempenho">Tamanho e Desempenho</h1>
+<h1 id="qualidade">Qualidade</h1>
+</p>
+<h1 id="referencias-bibliograficas">Referências Bibliográficas</h1>
 <blockquote></blockquote>
-<h2 id="autores">Autor(es)</h2>
-<!-- Para cada alteração no documento, lembre-se de descrever as mudanças, a versão, a data e creditar os autores. -->
+<h1 id="historico-de-versao">Histórico de Versão</h1>
 <table>
 <thead>
 <tr>
@@ -251,9 +418,39 @@ Exemplo:
 </thead>
 <tbody>
 <tr>
-<td>dd/mm/aa</td>
+<td>08/11/2020</td>
 <td>1.0</td>
-<td>Criação do documento</td>
+<td>Criada estrutura básica do documento</td>
+<td>xxx xxx, xxx xx, xxx xx, xxx xxx e xxx xxxx</td>
+</tr>
+<tr>
+<td>15/11/2020</td>
+<td>1.1</td>
+<td>Representação arquitetural e objetivos e restrições arquiteturais.</td>
+<td>Autores</td>
+</tr>
+<tr>
+<td>19/11/2020</td>
+<td>1.2</td>
+<td>Adição dos diagramas, visões, tamanho e desempenho e qualidade</td>
+<td>Autores</td>
+</tr>
+<tr>
+<td>20/11/2020</td>
+<td>1.3</td>
+<td>Adição da descrição de MER e DER</td>
+<td>Autores</td>
+</tr>
+<tr>
+<td>20/11/2020</td>
+<td>1.4</td>
+<td>Adição do tópico de qualidade</td>
+<td>Autores</td>
+</tr>
+<tr>
+<td>20/11/2020</td>
+<td>1.5</td>
+<td>Revisão</td>
 <td>Autores</td>
 </tr>
 </tbody>
