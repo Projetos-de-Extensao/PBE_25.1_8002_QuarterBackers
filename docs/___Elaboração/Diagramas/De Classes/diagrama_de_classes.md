@@ -22,7 +22,7 @@ Para a criação da primeira versão do diagrama de classes, a equipe utilizou o
 
 ### Versão 1.0
 
-[![Diagrama de Classes](assets/Diagrama_de_Classes/diagrama_de_classes.png)](assets/Diagrama_de_Classes/diagrama_de_classes.png)
+[![Diagrama de Classes](../../../assets/Diagrama_de_Classes/diagrama_de_classes.png)](../../../assets/Diagrama_de_Classes/diagrama_de_classes.png)
 
 
 ### Versão 1.1
