@@ -6,42 +6,76 @@ class Morador {
     - cpf: String
     - nome: String
     - sobrenome: String
+    - email: Email
+    - telefone_fixo: String
+    - telefone_movel: String
     - data_nascimento: Date
     - sexo: String
-    - cor_ou_raca: String
-    - etnia: String
-    - renda: Float
-    - estado_civil: String
-    - escolaridade: String
-    - email: String
-    - telefone: String
-    - num_dependentes: int
+    - idade_ano: int
+    - idade_meses: int
+    - relacao_parentesco_responsavel: String
+    - cor: String
+    - se_considera_indigena: Boolean
+    - etnia1: String
+    - etnia2: String
+    - fala_lingua_indigena_domicilio: Boolean
+    - lingua_indigina1: String
+    - lingua_indigina2: String
+    - lingua_indigina3: String
+    - fala_portugues_domicilio: Boolean
+    - se_considera_quilombola: Boolean
+    - nome_comunidade_quilombola: String
+    - registro_nascimento: String
+    - sabe_ler_escrever: Boolean
+    - rendimento_bruto_responsavel: String
+    - valor_rendimento_responsavel: Float
+    - faixa_rendimento_responsavel: String
+    - quem_prestou_info: String
+    - nome_outro_morador: String
 }
 
 class Falecido {
-    - nome: String
-    - data_falecimento: Date
+    - domicilio_relacionado: String
+    - faleceu_no_periodo: Boolean
+    - nome_falecido: String
+    - sobrenome_falecido: String
+    - mes_ano_falecimento: String
+    - sexo_falecido: String
+    - idade_anos_falecimento: int
+    - idade_meses_falecimento: int
 }
 
 class Domicilio {
+    - id: int
     - uf: String
     - municipio: String
     - distrito: String
     - subdistrito: String
     - setor: String
-    - especie: String
+    - num_quadra: String
+    - num_face: String
+    - seq_endereco: String
+    - seq_coletivo: String
+    - seq_especie: String
+    - especie_domicilio: String
     - tipo: String
-    - qntd_moradores: int
-    - proprietario: String
-    - abastecimento_agua: String
-    - rede_esgoto: String
-    - coleta_lixo: String
+    - qtd_moradores: int
+    - qtd_zeroanove: int
+    - forma_abastecimento: String
+    - tem_acesso_rede_agua_geral: Boolean
+    - como_agua_chega: String
+    - num_banheiros_exclusivos: int
+    - usa_banheiro_uso_comum: Boolean
+    - usa_sanitario_buraco_dejecoes: Boolean
+    - esgoto_banheiro: String
+    - esgoto_sanitario_buraco: String
+    - lixo_domicilio: String
 }
 
 ' ==== RELACIONAMENTOS ====
 
 Domicilio --> "1" Morador : responsável
-Domicilio --> "*" Falecido : possui
+Domicilio --> "1" Falecido : possui
 Recenseador --> "1,*" Domicilio : registra
 Recenseador --> "1,*" Morador : registra
 Recenseador --> "1,*" Falecido : registra
