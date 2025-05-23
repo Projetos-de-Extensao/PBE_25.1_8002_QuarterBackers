@@ -1,13 +1,36 @@
 @startuml diagrama_de_classes
 
 class Morador {
-    
+    cpf
+    nome
+    sobrenome
+    data_nascimento
+    sexo
+    cor_ou_raca
+    etnia
+    renda
+    estado_civil
+    escolaridade
+    email
+    telefone
+    num_dependentes
 }
 
 class Domicílio {
-
+    uf
+    municipio
+    distrito
+    subdistrito
+    setor
+    especie
+    tipo
+    qntd_moradores
+    proprietario
+    abastecimento_agua
+    rede_esgoto
+    coleta_ixo
 }
 
-Domícilio --> Morador
+Domicílio -- Morador
 
 @enduml
