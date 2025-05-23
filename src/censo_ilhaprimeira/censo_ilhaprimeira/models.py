@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Morador(models.Model):
     
     ESCOLHAS_SEXO = [
