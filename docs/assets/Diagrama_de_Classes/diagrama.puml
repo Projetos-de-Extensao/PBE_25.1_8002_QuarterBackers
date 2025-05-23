@@ -1,25 +1,13 @@
 @startuml diagrama_de_classes
 
-class Usuário {
+class Morador {
+    
 }
 
-class Recenseador {
+class Domicílio {
+
 }
 
-class Administrador {
-}
-
-class Pesquisa {
-}
-
-class Dashboard {
-}
-
-Usuário  -->  Dashboard
-Pesquisa --> Dashboard
-Administrador --> Pesquisa
-Recenseador --> Pesquisa
-Recenseador --> Dashboard
-Administrador --> Dashboard
+Domícilio --> Morador
 
 @enduml
