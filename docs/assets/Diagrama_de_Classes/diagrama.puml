@@ -4,10 +4,15 @@ class Morador {
     
 }
 
+class Falecido {
+
+}
+
 class Domicílio {
 
 }
 
 Domícilio --> Morador
+Domicílio --> Falecido
 
 @enduml
