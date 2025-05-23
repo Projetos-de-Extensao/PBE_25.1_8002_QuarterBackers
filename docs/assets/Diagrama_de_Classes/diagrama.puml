@@ -1,36 +1,75 @@
 @startuml diagrama_de_classes
 
+' ==== CLASSES PRINCIPAIS ====
+
 class Morador {
-    cpf
-    nome
-    sobrenome
-    data_nascimento
-    sexo
-    cor_ou_raca
-    etnia
-    renda
-    estado_civil
-    escolaridade
-    email
-    telefone
-    num_dependentes
+    - cpf: String
+    - nome: String
+    - sobrenome: String
+    - data_nascimento: Date
+    - sexo: String
+    - cor_ou_raca: String
+    - etnia: String
+    - renda: Float
+    - estado_civil: String
+    - escolaridade: String
+    - email: String
+    - telefone: String
+    - num_dependentes: int
 }
 
-class Domicílio {
-    uf
-    municipio
-    distrito
-    subdistrito
-    setor
-    especie
-    tipo
-    qntd_moradores
-    proprietario
-    abastecimento_agua
-    rede_esgoto
-    coleta_ixo
+class Falecido {
+    - nome: String
+    - data_falecimento: Date
 }
 
-Domicílio -- Morador
+class Domicilio {
+    - uf: String
+    - municipio: String
+    - distrito: String
+    - subdistrito: String
+    - setor: String
+    - especie: String
+    - tipo: String
+    - qntd_moradores: int
+    - proprietario: String
+    - abastecimento_agua: String
+    - rede_esgoto: String
+    - coleta_lixo: String
+}
+
+' ==== RELACIONAMENTOS ====
+
+Domicilio --> "1" Morador : responsável
+Domicilio --> "*" Falecido : possui
+Recenseador --> "1,*" Domicilio : registra
+Recenseador --> "1,*" Morador : registra
+Recenseador --> "1,*" Falecido : registra
+Administrador --> "1,*" Domicilio : altera
+Administrador --> "1,*" Morador : altera
+Administrador --> "1,*" Falecido : altera,
+
+' ==== USUÁRIOS ====
+
+abstract class Usuario {
+    - nome: String
+    - id: String
+    - email: String
+}
+
+class Recenseador {
+    - area_de_atuacao: String
+    - data_inicio: Date
+    - turno: String
+}
+
+class Administrador {
+    - nivel_acesso: String
+    - departamento: String
+    - ativo: Boolean
+}
+
+Usuario <|-- Recenseador
+Usuario <|-- Administrador
 
 @enduml

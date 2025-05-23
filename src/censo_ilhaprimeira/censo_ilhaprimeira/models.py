@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Morador(models.Model):
     
     ESCOLHAS_SEXO = [
@@ -78,8 +79,8 @@ class Morador(models.Model):
     telefone_movel = models.CharField()
     sexo = models.TextField(choices=ESCOLHAS_SEXO)
     dt_nascimento = models.DateField()
-    idade_anos = models.IntegerField(max_length=3)
-    idade_meses = models.IntegerField(max_length=2)
+    idade_anos = models.IntegerField()
+    idade_meses = models.IntegerField()
     relacao_parentesco_responsavel = models.TextField(choices=ESCOLHAS_RELACAO)
 
     # Segunda folha
@@ -106,75 +107,7 @@ class Morador(models.Model):
 
 
     def __str__(self):
-        return self.cpf
-
-class Falecido(models.Model):
-
-    ESCOLHAS_SEXO = [
-        ("MASCULINO", "1 - MASCULINO"),
-        ("FEMININO", "2 - FEMININO")
-    ]
-
-    ESCOLHAS_MES_ANO_FALECIMENTO = [
-        ("JULHO 2022", "1 - JULHO 2022"),
-        ("JUNHO 2022", "2 - JUNHO 2022"),
-        ("MAIO 2022", "3 - MAIO 2022"),
-        ("ABRIL 2022", "4 - ABRIL 2022"),
-        ("MARÇO 2022", "5 - MARÇO 2022"),
-        ("FEVEREIRO 2022", "6 - FEVEREIRO 2022"),
-        ("JANEIRO 2022", "7 - JANEIRO 2022"),
-        ("DEZEMBRO 2021", "8 - DEZEMBRO 2021"),
-        ("NOVEMBRO 2021", "9 - NOVEMBRO 2021"),
-        ("OUTUBRO 2021", "10 - OUTUBRO 2021"),
-        ("SETEMBRO 2021", "11 - SETEMBRO 2021"),
-        ("AGOSTO 2021", "12 - AGOSTO 2021"),
-        ("JULHO 2021", "13 - JULHO 2021"),
-        ("JUNHO 2021", "14 - JUNHO 2021"),
-        ("MAIO 2021", "15 - MAIO 2021"),
-        ("ABRIL 2021", "16 - ABRIL 2021"),
-        ("MARÇO 2021", "17 - MARÇO 2021"),
-        ("FEVEREIRO 2021", "18 - FEVEREIRO 2021"),
-        ("JANEIRO 2021", "19 - JANEIRO 2021"),
-        ("DEZEMBRO 2020", "20 - DEZEMBRO 2020"),
-        ("NOVEMBRO 2020", "21 - NOVEMBRO 2020"),
-        ("OUTUBRO 2020", "22 - OUTUBRO 2020"),
-        ("SETEMBRO 2020", "23 - SETEMBRO 2020"),
-        ("AGOSTO 2020", "24 - AGOSTO 2020"),
-        ("JULHO 2020", "25 - JULHO 2020"),
-        ("JUNHO 2020", "26 - JUNHO 2020"),
-        ("MAIO 2020", "27 - MAIO 2020"),
-        ("ABRIL 2020", "28 - ABRIL 2020"),
-        ("MARÇO 2020", "29 - MARÇO 2020"),
-        ("FEVEREIRO 2020", "30 - FEVEREIRO 2020"),
-        ("JANEIRO 2020", "31 - JANEIRO 2020"),
-        ("DEZEMBRO 2019", "32 - DEZEMBRO 2019"),
-        ("NOVEMBRO 2019", "33 - NOVEMBRO 2019"),
-        ("OUTUBRO 2019", "34 - OUTUBRO 2019"),
-        ("SETEMBRO 2019", "35 - SETEMBRO 2019"),
-        ("AGOSTO 2019", "36 - AGOSTO 2019"),
-        ("JULHO 2019", "37 - JULHO 2019"),
-        ("JUNHO 2019", "38 - JUNHO 2019"),
-        ("MAIO 2019", "39 - MAIO 2019"),
-        ("ABRIL 2019", "40 - ABRIL 2019"),
-        ("MARÇO 2019", "41 - MARÇO 2019"),
-        ("FEVEREIRO 2019", "42 - FEVEREIRO 2019"),
-        ("JANEIRO 2019", "43 - JANEIRO 2019"),
-    ]
-
-    morador_relacionado = models.ForeignKey(Morador, on_delete=models.CASCADE)
-    faleceu_no_periodo = models.BooleanField()
-    nome_falecido = models.CharField(max_length=35)
-    sobrenome_falecido = models.CharField(max_length=200)
-    mes_ano_falecimento = models.TextField(choices=ESCOLHAS_MES_ANO_FALECIMENTO)
-    sexo_falecido = models.TextField(choices=ESCOLHAS_SEXO)
-    idade_anos_falecimento = models.IntegerField(max_length=3)
-    idade_meses_falecimento = models.IntegerField(max_length=2)
-
-    class Meta:
-        unique_together = (('morador', 'data_falecimento'),)
-
-    def __str__(self):
-        return f'{self.nome} - {self.mes_ano_falecimento}'
+        return f'{self.cpf} - {self.nome} - {self.domicilio_relacionado}'
 
 class Domicilio(models.Model):
 
@@ -256,7 +189,11 @@ class Domicilio(models.Model):
         ("OUTRO DESTINO", "6 - OUTRO DESTINO"),
     ]
 
+    # Relacionamentos
+    responsavel = models.ForeignKey(Morador, null=True, on_delete=models.SET_NULL)
+    
     # Principais
+    id = models.AutoField(primary_key=True)
     uf = models.CharField(max_length=2)
     municipio = models.CharField(max_length=5)
     distrito = models.CharField(max_length=2)
@@ -271,20 +208,82 @@ class Domicilio(models.Model):
     tipo = models.TextField(choices=ESCOLHAS_TIPO)
 
     # Características Adicionais
-    qtd_moradores = models.IntegerField(max_length=2)
-    qtd_zeroanove = models.IntegerField(max_length=2)
+    qtd_moradores = models.IntegerField()
+    qtd_zeroanove = models.IntegerField()
     forma_abastecimento = models.TextField(choices=ESCOLHAS_ABASTECIMENTO)
     tem_acesso_rede_agua_geral = models.BooleanField()
     como_agua_chega = models.TextField(choices=ESCOLHAS_AGUA_CHEGA)
-    num_banheiros_exclusivos = models.IntegerField(max_length=2)
+    num_banheiros_exclusivos = models.IntegerField()
     usa_banheiro_uso_comum = models.BooleanField()
     usa_sanitario_buraco_dejecoes = models.BooleanField()
     esgoto_banheiro = models.TextField(choices=ESCOLHAS_ESGOTO_BANHEIRO)
     esgoto_sanitario_buraco = models.TextField(choices=ESCOLHAS_ESGOTO_SAN_BUR)
     lixo_domicilio = models.TextField(choices=ESCOLHAS_LIXO_DOMICILIO)
 
-    # Relacionamentos
-    responsavel = models.ForeignKey(Morador, null=True, on_delete=models.DO_NOTHING)
+    def __str__(self):
+        return f'{self.id} - {self.responsavel} - {self.seq_endereco}'
+
+class Falecido(models.Model):
+
+    ESCOLHAS_SEXO = [
+        ("MASCULINO", "1 - MASCULINO"),
+        ("FEMININO", "2 - FEMININO")
+    ]
+
+    ESCOLHAS_MES_ANO_FALECIMENTO = [
+        ("JULHO 2022", "1 - JULHO 2022"),
+        ("JUNHO 2022", "2 - JUNHO 2022"),
+        ("MAIO 2022", "3 - MAIO 2022"),
+        ("ABRIL 2022", "4 - ABRIL 2022"),
+        ("MARÇO 2022", "5 - MARÇO 2022"),
+        ("FEVEREIRO 2022", "6 - FEVEREIRO 2022"),
+        ("JANEIRO 2022", "7 - JANEIRO 2022"),
+        ("DEZEMBRO 2021", "8 - DEZEMBRO 2021"),
+        ("NOVEMBRO 2021", "9 - NOVEMBRO 2021"),
+        ("OUTUBRO 2021", "10 - OUTUBRO 2021"),
+        ("SETEMBRO 2021", "11 - SETEMBRO 2021"),
+        ("AGOSTO 2021", "12 - AGOSTO 2021"),
+        ("JULHO 2021", "13 - JULHO 2021"),
+        ("JUNHO 2021", "14 - JUNHO 2021"),
+        ("MAIO 2021", "15 - MAIO 2021"),
+        ("ABRIL 2021", "16 - ABRIL 2021"),
+        ("MARÇO 2021", "17 - MARÇO 2021"),
+        ("FEVEREIRO 2021", "18 - FEVEREIRO 2021"),
+        ("JANEIRO 2021", "19 - JANEIRO 2021"),
+        ("DEZEMBRO 2020", "20 - DEZEMBRO 2020"),
+        ("NOVEMBRO 2020", "21 - NOVEMBRO 2020"),
+        ("OUTUBRO 2020", "22 - OUTUBRO 2020"),
+        ("SETEMBRO 2020", "23 - SETEMBRO 2020"),
+        ("AGOSTO 2020", "24 - AGOSTO 2020"),
+        ("JULHO 2020", "25 - JULHO 2020"),
+        ("JUNHO 2020", "26 - JUNHO 2020"),
+        ("MAIO 2020", "27 - MAIO 2020"),
+        ("ABRIL 2020", "28 - ABRIL 2020"),
+        ("MARÇO 2020", "29 - MARÇO 2020"),
+        ("FEVEREIRO 2020", "30 - FEVEREIRO 2020"),
+        ("JANEIRO 2020", "31 - JANEIRO 2020"),
+        ("DEZEMBRO 2019", "32 - DEZEMBRO 2019"),
+        ("NOVEMBRO 2019", "33 - NOVEMBRO 2019"),
+        ("OUTUBRO 2019", "34 - OUTUBRO 2019"),
+        ("SETEMBRO 2019", "35 - SETEMBRO 2019"),
+        ("AGOSTO 2019", "36 - AGOSTO 2019"),
+        ("JULHO 2019", "37 - JULHO 2019"),
+        ("JUNHO 2019", "38 - JUNHO 2019"),
+        ("MAIO 2019", "39 - MAIO 2019"),
+        ("ABRIL 2019", "40 - ABRIL 2019"),
+        ("MARÇO 2019", "41 - MARÇO 2019"),
+        ("FEVEREIRO 2019", "42 - FEVEREIRO 2019"),
+        ("JANEIRO 2019", "43 - JANEIRO 2019"),
+    ]
+
+    domicilio_relacionado = models.OneToOneField(Domicilio, on_delete=models.CASCADE)
+    faleceu_no_periodo = models.BooleanField()
+    nome_falecido = models.CharField(max_length=35)
+    sobrenome_falecido = models.CharField(max_length=200)
+    mes_ano_falecimento = models.TextField(choices=ESCOLHAS_MES_ANO_FALECIMENTO)
+    sexo_falecido = models.TextField(choices=ESCOLHAS_SEXO)
+    idade_anos_falecimento = models.IntegerField()
+    idade_meses_falecimento = models.IntegerField()
 
     def __str__(self):
-        return self.nome
+        return f'{self.nome_falecido} - {self.domicilio_relacionado} - {self.mes_ano_falecimento}'
