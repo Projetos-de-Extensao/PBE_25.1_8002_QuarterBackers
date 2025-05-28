@@ -26,7 +26,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'censo_ilhaprimeira',
-    'api_censo',
     'rest_framework',
     'drf_yasg'
 ]

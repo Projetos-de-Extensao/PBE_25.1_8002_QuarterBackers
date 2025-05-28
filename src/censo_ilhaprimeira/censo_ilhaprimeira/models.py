@@ -74,35 +74,35 @@ class Morador(models.Model):
     nome = models.CharField(max_length=35)
     sobrenome = models.CharField(max_length=200)
     email = models.EmailField(max_length=244)
-    telefone_fixo = models.CharField()
-    telefone_movel = models.CharField()
-    sexo = models.TextField(choices=ESCOLHAS_SEXO)
-    dt_nascimento = models.DateField()
-    idade_anos = models.IntegerField()
-    idade_meses = models.IntegerField()
-    relacao_parentesco_responsavel = models.TextField(choices=ESCOLHAS_RELACAO)
+    telefone_fixo = models.CharField(null=True, blank=True)
+    telefone_movel = models.CharField(null=True, blank=True)
+    sexo = models.TextField(choices=ESCOLHAS_SEXO, null=True, blank=True)
+    dt_nascimento = models.DateField(null=True, blank=True)
+    idade_anos = models.IntegerField(null=True, blank=True)
+    idade_meses = models.IntegerField(null=True, blank=True)
+    relacao_parentesco_responsavel = models.TextField(choices=ESCOLHAS_RELACAO, null=True, blank=True)
 
     # Segunda folha
     cor = models.TextField(choices=ESCOLHAS_COR)
     se_considera_indigena = models.BooleanField()
-    etnia1 = models.CharField(max_length=20)
-    etnia2 = models.CharField(max_length=20)
+    etnia1 = models.CharField(max_length=20, null=True, blank=True)
+    etnia2 = models.CharField(max_length=20, null=True, blank=True)
     fala_lingua_indigena_domicilio = models.BooleanField()
-    lingua_indigina1 = models.CharField(max_length=20)
-    lingua_indigina2 = models.CharField(max_length=20)
-    lingua_indigina3 = models.CharField(max_length=20)
+    lingua_indigina1 = models.CharField(max_length=20, null=True, blank=True)
+    lingua_indigina2 = models.CharField(max_length=20, null=True, blank=True)
+    lingua_indigina3 = models.CharField(max_length=20, null=True, blank=True)
     fala_portugues_domicilio = models.BooleanField()
-    se_considera_quilombola = models.BooleanField()
-    nome_comunidade_quilombola = models.CharField(max_length=50)
+    se_considera_quilombola = models.BooleanField(null=True, blank=True)
+    nome_comunidade_quilombola = models.CharField(max_length=50, null=True, blank=True)
     registro_nascimento = models.TextField(choices=ESCOLHAS_REGISTRO_NASCIMENTO)
     sabe_ler_escrever = models.BooleanField()
     
     # Terceira folha
-    rendimento_bruto_responsavel = models.TextField(choices=ESCOLHAS_RENDIMENTO_BRUTO_RESPONSAVEL)
-    valor_rendimento_responsavel = models.FloatField()
-    faixa_rendimento_responsavel = models.TextField(choices=ESCOLHAS_FAIXA_RENDIMENTO_RESPONSAVEL)
+    rendimento_bruto_responsavel = models.TextField(choices=ESCOLHAS_RENDIMENTO_BRUTO_RESPONSAVEL, null=True, blank=True)
+    valor_rendimento_responsavel = models.FloatField(null=True, blank=True)
+    faixa_rendimento_responsavel = models.TextField(choices=ESCOLHAS_FAIXA_RENDIMENTO_RESPONSAVEL, null=True, blank=True)
     quem_prestou_info = models.TextField(choices=ESCOLHAS_PRESTADOR_INFORMACOES)
-    nome_outro_morador = models.CharField(max_length=250)
+    nome_outro_morador = models.CharField(max_length=250, null=True, blank=True)
 
 
     def __str__(self):
@@ -188,12 +188,25 @@ class Domicilio(models.Model):
         ("OUTRO DESTINO", "6 - OUTRO DESTINO"),
     ]
 
+    ESCOLHAS_RUA = [
+        ("R. Marina do Sol", "R. Marina do Sol"),
+        ("R. Marina do Frade", "R. Marina do Frade"),
+        ("R. Marina dos Coqueiros", "R. Marina dos Coqueiros"),
+        ("R. Marina da Lua", "R. Marina da Lua"),
+        ("R. Marina do Bosque", "R. Marina do Bosque"),
+        ("R. Marina Porto Bali", "R. Marina Porto Bali"),
+        ("R. Marina das Flores", "R. Marina das Flores"),
+        ("R. Marina das Estrelas", "R. Marina das Estrelas"),
+        ("R. Marina Ponta Leste", "R. Marina Ponta Leste")
+    ]
+
     # Relacionamentos
     responsavel = models.ForeignKey(Morador, null=True, on_delete=models.SET_NULL)
     
     # Principais
     id = models.AutoField(primary_key=True)
     uf = models.CharField(max_length=2)
+    rua_domicilio = models.TextField(choices=ESCOLHAS_RUA, null=True, blank=True)
     municipio = models.CharField(max_length=5)
     distrito = models.CharField(max_length=2)
     subdistrito = models.CharField(max_length=2)
@@ -203,21 +216,21 @@ class Domicilio(models.Model):
     seq_endereco = models.CharField(max_length=6)
     seq_coletivo = models.CharField(max_length=6)
     seq_especie = models.CharField(max_length=6)
-    especie_domicilio = models.TextField(choices=ESCOLHAS_ESPECIEDOMICILIO)
-    tipo = models.TextField(choices=ESCOLHAS_TIPO)
+    especie_domicilio = models.TextField(choices=ESCOLHAS_ESPECIEDOMICILIO, null=True, blank=True)
+    tipo = models.TextField(choices=ESCOLHAS_TIPO, null=True, blank=True)
 
     # Características Adicionais
     qtd_moradores = models.IntegerField()
     qtd_zeroanove = models.IntegerField()
-    forma_abastecimento = models.TextField(choices=ESCOLHAS_ABASTECIMENTO)
-    tem_acesso_rede_agua_geral = models.BooleanField()
-    como_agua_chega = models.TextField(choices=ESCOLHAS_AGUA_CHEGA)
-    num_banheiros_exclusivos = models.IntegerField()
-    usa_banheiro_uso_comum = models.BooleanField()
-    usa_sanitario_buraco_dejecoes = models.BooleanField()
-    esgoto_banheiro = models.TextField(choices=ESCOLHAS_ESGOTO_BANHEIRO)
-    esgoto_sanitario_buraco = models.TextField(choices=ESCOLHAS_ESGOTO_SAN_BUR)
-    lixo_domicilio = models.TextField(choices=ESCOLHAS_LIXO_DOMICILIO)
+    forma_abastecimento = models.TextField(choices=ESCOLHAS_ABASTECIMENTO, null=True, blank=True)
+    tem_acesso_rede_agua_geral = models.BooleanField(null=True, blank=True)
+    como_agua_chega = models.TextField(choices=ESCOLHAS_AGUA_CHEGA, null=True, blank=True)
+    num_banheiros_exclusivos = models.IntegerField(null=True, blank=True)
+    usa_banheiro_uso_comum = models.BooleanField(null=True, blank=True)
+    usa_sanitario_buraco_dejecoes = models.BooleanField(null=True, blank=True)
+    esgoto_banheiro = models.TextField(choices=ESCOLHAS_ESGOTO_BANHEIRO, null=True, blank=True)
+    esgoto_sanitario_buraco = models.TextField(choices=ESCOLHAS_ESGOTO_SAN_BUR, null=True, blank=True)
+    lixo_domicilio = models.TextField(choices=ESCOLHAS_LIXO_DOMICILIO, null=True, blank=True)
 
     def __str__(self):
         return f'{self.id} - {self.responsavel} - {self.seq_endereco}'
@@ -279,10 +292,10 @@ class Falecido(models.Model):
     faleceu_no_periodo = models.BooleanField()
     nome_falecido = models.CharField(max_length=35)
     sobrenome_falecido = models.CharField(max_length=200)
-    mes_ano_falecimento = models.TextField(choices=ESCOLHAS_MES_ANO_FALECIMENTO)
-    sexo_falecido = models.TextField(choices=ESCOLHAS_SEXO)
-    idade_anos_falecimento = models.IntegerField()
-    idade_meses_falecimento = models.IntegerField()
+    mes_ano_falecimento = models.TextField(choices=ESCOLHAS_MES_ANO_FALECIMENTO, null=True, blank=True)
+    sexo_falecido = models.TextField(choices=ESCOLHAS_SEXO, null=True, blank=True)
+    idade_anos_falecimento = models.IntegerField(null=True, blank=True)
+    idade_meses_falecimento = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
         return f'{self.nome_falecido} - {self.domicilio_relacionado} - {self.mes_ano_falecimento}'
