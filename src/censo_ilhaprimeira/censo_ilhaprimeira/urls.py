@@ -4,6 +4,8 @@ from django.urls import path, re_path
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
+from django.urls import path
+from rest_framework.authtoken.views import obtain_auth_token
 
 # Configuração do Swagger
 schema_view = get_schema_view(
@@ -22,6 +24,7 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('censo_ilhaprimeira.urls_api')),
+    path('api/token/', obtain_auth_token, name='api_token_auth'),
 
     # URLs do Swagger
     re_path(r'^swagger/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
