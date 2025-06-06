@@ -94,5 +94,4 @@
 
 # Diagrama de Casos de Uso
 
-![![Diagrama de Caso de Uso](../assets/Casos_de_Uso/Casos_de_Uso.png)](../assets/Casos_de_Uso/Casos_de_Uso.png)
-
+![Diagrama de Caso de Uso](../../../assets/Casos_de_Uso/Casos_de_Uso.png)
