@@ -1,17 +1,24 @@
-# Welcome to MkDocs
+# QuarterBackers
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+**Número do Grupo**: QuarterBackers<br>
+**Turma**: 8002<br>
 
-## Commands
+## Alunos
+|Matrícula | Aluno |
+| -- | -- |
+| Gabriel Corrêa |  2024 0163 9702 |
+| Estevão Moraes  |  2024 0207 0134 |
+| Marcelle Lohane  |  2024 0272 6056 |
+| Raphael de Oliveira Costa  |  2023 0716 4135 |
+| FRANC WANG | 2024 0722 9166 |
+| Enzo Lazzarotto | 2024 0203 5258 |
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Sobre 
+Este projeto é uma API desenvolvida para atender às necessidades dos moradores da Ilha Primeira.
 
-## Project layout
+## Screenshots
+Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Instalação 
+**Linguagens**: Python<br>
+**Tecnologias**: Django / Django REST Framework<br>
