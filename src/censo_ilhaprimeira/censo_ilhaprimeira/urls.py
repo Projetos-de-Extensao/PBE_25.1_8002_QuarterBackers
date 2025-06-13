@@ -23,6 +23,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('api/', include('censo_ilhaprimeira.urls_api')),
     path('api/token/', obtain_auth_token, name='api_token_auth'),
 
