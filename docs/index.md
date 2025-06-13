@@ -16,9 +16,6 @@
 ## Sobre 
 Este projeto é uma API desenvolvida para atender às necessidades dos moradores da Ilha Primeira.
 
-## Screenshots
-Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
-
 ## Instalação 
 **Linguagens**: Python<br>
 **Tecnologias**: Django / Django REST Framework<br>
