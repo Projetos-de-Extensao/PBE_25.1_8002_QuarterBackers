@@ -13,5 +13,5 @@
 | FRANC WANG | 2024 0722 9166 |
 | Enzo Lazzarotto | 2024 0203 5258 |
 
-## Link da Apresentação 
-[Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.](https://www.canva.com/design/DAGpk6AqfS4/qNSaurpt0nUo_MOuInHIZw/view?utm_content=DAGpk6AqfS4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h741119d9c4)
+## Links:
+[Link da apresentação](https://www.canva.com/design/DAGpk6AqfS4/qNSaurpt0nUo_MOuInHIZw/view?utm_content=DAGpk6AqfS4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h741119d9c4)
