@@ -106,7 +106,7 @@ class Morador(models.Model):
 
 
     def __str__(self):
-        return f'{self.cpf} - {self.nome} - {self.domicilio_relacionado}'
+        return f'{self.cpf} - {self.nome}'
 
 class Domicilio(models.Model):
 

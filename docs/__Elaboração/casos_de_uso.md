@@ -1,4 +1,4 @@
-# Casos de Uso - Sistema de Recenseamento da Ilha Primeira
+# Casos de Uso + Diagrama
 
 ## Caso de Uso 01 - Cadastro no Sistema
 **Atores:** Usuário, Sistema
@@ -89,9 +89,8 @@
 
 **Pós-condição:** A pesquisa é atualizada com sucesso.
 
-
 ---
 
 # Diagrama de Casos de Uso
 
-![Diagrama de Caso de Uso](../../../assets/Casos_de_Uso/Casos_de_Uso.png)
+![Diagrama de Caso de Uso](../assets/Casos_de_Uso/Casos_de_Uso.png)

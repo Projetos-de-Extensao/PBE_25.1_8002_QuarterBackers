@@ -1,6 +1,6 @@
-## 📊 Requisitos Extras
-
-Além dos dados fornecidos pelo IBGE, quais dados devem ser levados em consideração para melhorar a qualidade de vida na Ilha Primeira.
+# Requisitos Extras
+<p align="justify">
+Além dos dados fornecidos pelo IBGE, quais dados devem ser levados em consideração para melhorar a qualidade de vida na Ilha Primeira. </p>
 
 ### Acessibilidade
 - Acessibilidade nos domicílios.
